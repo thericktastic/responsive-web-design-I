@@ -95,10 +95,6 @@ a:link {
 	text-decoration: none;
 }
 
-nav {
-	text-align: center;
-	vertical-align: middle;
-}
 
 .nav-logo {
 	vertical-align: middle;
@@ -260,7 +256,7 @@ h2 {
 	line-height: 30px;
 }
 
-/*Here is the code for media queries*/
+/*Here is the code for media queries, starting*/
 
 @media (max-width:800px) {
 	.nav-bar {
@@ -302,5 +298,74 @@ h2 {
 
 	.contact {
 		margin: 30px 10px;
+	}
+}
+
+
+/* Here is the code for 500px (and smaller) displays */
+@media (max-width:500px) {
+	h1 {
+		font-size:100px;
+	}
+
+	h4 {
+		font-size:25px;
+	}
+
+	.top-content p {
+		font-size: 25px;
+	}
+
+	.bottom-content p{
+		font-size: 25px;
+	}
+
+	.nav-bar {
+		height:120px;
+		display:flex;
+		flex-direction:column-reverse;
+		justify-content: space-between;
+		padding-top:20px;
+		padding-bottom: 20px;
+	}
+
+	.nav a {
+		font-size:30px;
+	}
+
+	.title-logo {
+		display:none;
+	}
+	
+	.title-container {
+		display:flex;
+		justify-content:center;
+		margin: 150px 0 40px 0;
+	}
+
+	.top-container {
+		display:flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.top-content {
+		width:95%;
+		margin: 30px 10px;
+	}
+
+	.bottom-container {
+		display:flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.bottom-content {
+		width:95%;
+		margin: 30px 10px;
+	}
+
+	.contact p {
+		font-size:20px;
 	}
 }
