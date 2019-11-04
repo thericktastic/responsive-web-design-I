@@ -73,22 +73,25 @@ h1, h2, h3, h4, h5 {
 	margin: 0 auto;
 }
 
-/* Code for the fixed navigation bar */
+/* Code for the navigation bar */
 
 .nav-bar {
+	max-width: 100%;
 	display: flex;
 	align-items: center;
 	height: 60px;
-	width: 880px;
-	position: fixed;
-	top: 0;
-	background-image: linear-gradient(lightgray,white)
+}
+
+nav {
+	width: 100%;
+	display:flex;
+	justify-content: space-around;
 }
 
 nav a {
-	color: black;
+	color: grey;
 	font-size: 13px;
-	margin: 0 30px 20px 30px;
+	/* margin: 0 30px 20px 30px; */
 }
 
 a:link {
@@ -98,7 +101,6 @@ a:link {
 
 .nav-logo {
 	vertical-align: middle;
-	margin: 0 0 0 30px;
 }
 
 /* Code for the header containing the Innovation on Demand title, Get Started Button, and Image of random code */
@@ -113,7 +115,7 @@ h1 {
 	text-align: center;
 	display: flex;
 	align-items: center;
-	margin: 100px 0 70px 0;
+	margin: 60px 0 70px 0;
 }
 
 .innovation-title {
@@ -131,7 +133,7 @@ button {
 }
 
 .title-logo {
-	width: 49%;
+	width: 50%;
 	vertical-align: middle;
 }
 
@@ -256,26 +258,27 @@ h2 {
 	line-height: 30px;
 }
 
-/*Here is the code for media queries, starting*/
+/*Here is the code for media queries, starting at 800px*/
 
 @media (max-width:800px) {
+	h4 {
+		font-size:20px;
+	}
+
+	p {
+		font-size:20px;
+	}
+
+	nav a {
+		font-size:15px;
+	}
+
 	.nav-bar {
 		height:120px;
 		display:flex;
 		flex-direction:column-reverse;
-		justify-content: space-between;
+		justify-content: space-around;
 		padding-top:20px;
-		padding-bottom: 20px;
-	}
-
-	.nav {
-		display:flex;
-		justify-content:space-between;
-	}
-
-	.nav a {
-		font-size:30px;
-		margin: 0;
 	}
 
 	.title-logo {
@@ -285,7 +288,7 @@ h2 {
 	.title-container {
 		display:flex;
 		justify-content:center;
-		margin: 150px 0 40px 0;
+		margin: 40px 0 40px 0;
 	}
 
 	.top-content {
@@ -312,25 +315,32 @@ h2 {
 		font-size:25px;
 	}
 
-	.top-content p {
+	button {
 		font-size: 25px;
+		padding: 16px 100px;
+		border:2px solid black;
+		background-color: white;
+		border-radius: 6px
 	}
 
-	.bottom-content p{
-		font-size: 25px;
+	.nav-logo {
+		margin-bottom
 	}
 
 	.nav-bar {
-		height:120px;
-		display:flex;
-		flex-direction:column-reverse;
-		justify-content: space-between;
-		padding-top:20px;
-		padding-bottom: 20px;
+		height:525px;
 	}
 
-	.nav a {
+	nav {
+		display:flex;
+		flex-direction:column;
+		text-align:center;
+	}
+
+	nav a {
 		font-size:30px;
+		padding:20px 0 20px 0;
+		border-top:2px solid grey;
 	}
 
 	.title-logo {
@@ -340,7 +350,13 @@ h2 {
 	.title-container {
 		display:flex;
 		justify-content:center;
-		margin: 150px 0 40px 0;
+		margin: 0 0 40px 0;
+		padding-top:70px;
+		border-top:2px solid grey;
+	}
+
+	.innovation-title {
+		line-height: 100px;
 	}
 
 	.top-container {
@@ -351,7 +367,11 @@ h2 {
 
 	.top-content {
 		width:95%;
-		margin: 30px 10px;
+		margin: 40px 10px;
+	}
+
+	.top-content p {
+		font-size:25px;
 	}
 
 	.bottom-container {
@@ -362,7 +382,15 @@ h2 {
 
 	.bottom-content {
 		width:95%;
-		margin: 30px 10px;
+		margin: 40px 10px;
+	}
+
+	.bottom-content p{
+		font-size: 25px;
+	}
+
+	.contact {
+		margin: 30px 0 0 25px;
 	}
 
 	.contact p {
