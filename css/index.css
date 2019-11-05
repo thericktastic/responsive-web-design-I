@@ -200,7 +200,7 @@ footer {
 
 
 /* This readjusts the font size of Services */
-h2 { 
+.services-top-container h2 { 
 	font-size: 22px;
 }
 
@@ -209,7 +209,7 @@ h2 {
 }
 
 
-/* Here is the code for the middle section of content, made so it */
+/* Here is the code for the middle section of content*/
 .services-middle-container {
 	padding: 40px 0 0 0;
 	display: flex;
@@ -258,7 +258,7 @@ h2 {
 	line-height: 30px;
 }
 
-/*Here is the code for media queries, starting at 800px*/
+/*Here is the code for media queries, starting at 800px for the home page*/
 
 @media (max-width:800px) {
 	h4 {
@@ -302,6 +302,45 @@ h2 {
 	.contact {
 		margin: 30px 10px;
 	}
+
+
+	/* Here is the media query code for the Services Page */
+
+	.services-top-container {
+		margin:20px 10px;
+		padding-bottom:30px;
+		line-height: 22px;
+	}
+
+	.services-middle-content {
+		width: 45%;
+		height: 300px;
+		padding: 20px;
+		line-height: 22px;
+		margin: 0 20px 40px 20px;
+		border: 1px solid black;
+		background: #F2F1F1;
+	}
+
+	.services-button {
+		font-size: 18px;
+		padding: 10px 45px;
+		border-radius: 5px;
+		border: 1px solid black;
+	}
+
+	.facts-container {
+		margin: 40px 20px;
+	}
+
+	.facts-content {
+		line-height: 22px;
+	}
+
+	li {
+		font-size:20px;
+	}
+
 }
 
 
@@ -395,5 +434,40 @@ h2 {
 
 	.contact p {
 		font-size:20px;
+	}
+
+	/* Here is the media query code for the Services Page */
+
+	.services-top-container {
+		margin:20px 20px;
+		padding-bottom:30px;
+		line-height: 30px;
+	}
+
+	.services-top-container p {
+		font-size:25px;
+	}
+
+	.services-middle-content {
+		width: 96%;
+		height: 300px;
+		padding: 20px;
+		line-height: 22px;
+		margin: 0 20px 40px 20px;
+		border: 1px solid black;
+		background: #F2F1F1;
+	}
+
+	.services-middle-content p {
+		font-size:25px;
+		line-height:30px;
+	}
+
+	.services-button {
+		font-size: 35px;
+		padding: 15px 45px;
+		border-radius: 5px;
+		margin-left:500px;
+		border: 1px solid black;
 	}
 }
