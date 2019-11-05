@@ -1,3 +1,473 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 
+/* Main code starts here */
+
+.body-class {
+	width: 880px;
+	margin: 0 auto;
+}
+
+/* Code for the navigation bar */
+
+.nav-bar {
+	max-width: 100%;
+	display: flex;
+	align-items: center;
+	height: 60px;
+}
+
+nav {
+	width: 100%;
+	display:flex;
+	justify-content: space-around;
+}
+
+nav a {
+	color: grey;
+	font-size: 13px;
+	/* margin: 0 30px 20px 30px; */
+}
+
+a:link {
+	text-decoration: none;
+}
+
+
+.nav-logo {
+	vertical-align: middle;
+}
+
+/* Code for the header containing the Innovation on Demand title, Get Started Button, and Image of random code */
+
+h1 {
+	font-size: 70px;
+	text-align: center;
+}
+
+.title-container{
+	width: 100%;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	margin: 60px 0 70px 0;
+}
+
+.innovation-title {
+	width: 50%;
+	line-height: 75px;
+	vertical-align: middle;
+}
+
+button {
+	font-size: 17px;
+	padding: 8px 50px;
+	border:1px solid black;
+	background-color: white;
+	border-radius: 3px
+}
+
+.title-logo {
+	width: 50%;
+	vertical-align: middle;
+}
+
+/* Code for the box containing Features and About content with a border-top as the horizontal line */
+
+.top-container {
+	width: 100%;
+	text-align: center;
+	border-top: 2px solid black;
+	display: flex;
+}
+
+.top-content {
+	width: 50%;
+	margin: 3.5% 0 5% 0;
+	text-align: left;
+}
+
+/* Code for the image of more random code #inception #where's Leo */
+
+.middle-img {
+	margin: 0 auto;
+}
+
+/* Code for the box containing the Services, Product, and Vision content with a border-bottom as the horizontal line */
+
+.bottom-container {
+	width: 100%;
+	text-align: center;
+	border-bottom: 2px solid black;
+	display: flex;
+}
+
+.bottom-content {
+	width: 33.3%;
+	margin: 3.5% 0 5% 0;
+	text-align: left;
+}
+
+.bottom-content p {
+	width: 95%;
+}
+
+/* Code for the Contact section */
+
+.contact {
+	margin: 40px 0 0 0;
+}
+
+/* Here is the code for the Footer */
+
+footer {
+	text-align: center;
+	font-size: 15px;
+	margin: 30px 0 30px 0;
+}
+
+/* Here is the code for the Services Page, starting with the header image of the laptop and phone */
+
+.services-header-img {
+	margin: 60px 0 30px 0;
+}
+
+
+
+/* This readjusts the font size of Services */
+.services-top-container h2 { 
+	font-size: 22px;
+}
+
+.services-top-container {
+	margin: 0 0 30px 0;
+}
+
+
+/* Here is the code for the middle section of content*/
+.services-middle-container {
+	padding: 40px 0 0 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	border-top: 1px solid black;
+	border-bottom: 2px solid black;
+}
+
+.services-middle-content {
+	width: 420px;
+	height: 240px;
+	padding: 20px;
+	line-height: 18px;
+	margin: 0 0 40px 0;
+	border: 1px solid black;
+	background: #F2F1F1;
+}
+
+.services-middle-content p {
+	margin: 0 0 25px 0;
+}
+
+.services-button {
+	font-size: 10px;
+	padding: 10px 45px;
+	border-radius: 5px;
+	border: 1px solid black;
+}
+
+/* Here is the code for the Facts section at the bottom */
+
+.facts-container {
+	margin: 40px 0 90px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.facts-content {
+	width: 45%;
+	line-height: 20px;
+}
+
+#facts-list {
+	margin: 20px 0 0 20px;
+	line-height: 30px;
+}
+
+/*Here is the code for media queries, starting at 800px for the home page*/
+
+@media (max-width:800px) {
+	h4 {
+		font-size:20px;
+	}
+
+	p {
+		font-size:20px;
+	}
+
+	nav a {
+		font-size:15px;
+	}
+
+	.nav-bar {
+		height:120px;
+		display:flex;
+		flex-direction:column-reverse;
+		justify-content: space-around;
+		padding-top:20px;
+	}
+
+	.title-logo {
+		display:none;
+	}
+	
+	.title-container {
+		display:flex;
+		justify-content:center;
+		margin: 40px 0 40px 0;
+	}
+
+	.top-content {
+		margin: 30px 10px;
+	}
+
+	.bottom-content {
+		margin: 30px 10px;
+	}
+
+	.contact {
+		margin: 30px 10px;
+	}
+
+
+	/* Here is the media query code for the Services Page */
+
+	.services-top-container {
+		margin:20px 10px;
+		padding-bottom:30px;
+		line-height: 22px;
+	}
+
+	.services-middle-content {
+		width: 45%;
+		height: 300px;
+		padding: 20px;
+		line-height: 22px;
+		margin: 0 20px 40px 20px;
+		border: 1px solid black;
+		background: #F2F1F1;
+	}
+
+	.services-button {
+		font-size: 18px;
+		padding: 10px 45px;
+		border-radius: 5px;
+		border: 1px solid black;
+	}
+
+	.facts-container {
+		margin: 40px 20px;
+	}
+
+	.facts-content {
+		line-height: 22px;
+	}
+
+	li {
+		font-size:20px;
+	}
+
+}
+
+
+/* Here is the code for 500px (and smaller) displays */
+@media (max-width:500px) {
+	h1 {
+		font-size:100px;
+	}
+
+	h4 {
+		font-size:25px;
+	}
+
+	button {
+		font-size: 25px;
+		padding: 16px 100px;
+		border:2px solid black;
+		background-color: white;
+		border-radius: 6px
+	}
+
+	.nav-logo {
+		margin-bottom
+	}
+
+	.nav-bar {
+		height:525px;
+	}
+
+	nav {
+		display:flex;
+		flex-direction:column;
+		text-align:center;
+	}
+
+	nav a {
+		font-size:30px;
+		padding:20px 0 20px 0;
+		border-top:2px solid grey;
+	}
+
+	.title-logo {
+		display:none;
+	}
+	
+	.title-container {
+		display:flex;
+		justify-content:center;
+		margin: 0 0 40px 0;
+		padding-top:70px;
+		border-top:2px solid grey;
+	}
+
+	.innovation-title {
+		line-height: 100px;
+	}
+
+	.top-container {
+		display:flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.top-content {
+		width:95%;
+		margin: 40px 10px;
+	}
+
+	.top-content p {
+		font-size:25px;
+	}
+
+	.bottom-container {
+		display:flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.bottom-content {
+		width:95%;
+		margin: 40px 10px;
+	}
+
+	.bottom-content p{
+		font-size: 25px;
+	}
+
+	.contact {
+		margin: 30px 0 0 25px;
+	}
+
+	.contact p {
+		font-size:20px;
+	}
+
+	/* Here is the media query code for the Services Page */
+
+	.services-top-container {
+		margin:20px 20px;
+		padding-bottom:30px;
+		line-height: 30px;
+	}
+
+	.services-top-container p {
+		font-size:25px;
+	}
+
+	.services-middle-content {
+		width: 96%;
+		height: 300px;
+		padding: 20px;
+		line-height: 22px;
+		margin: 0 20px 40px 20px;
+		border: 1px solid black;
+		background: #F2F1F1;
+	}
+
+	.services-middle-content p {
+		font-size:25px;
+		line-height:30px;
+	}
+
+	.services-button {
+		font-size: 35px;
+		padding: 15px 45px;
+		border-radius: 5px;
+		margin-left:500px;
+		border: 1px solid black;
+	}
+}
